@@ -3,8 +3,8 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Jake Vision </title>
-    
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
 
   </head>
     
@@ -14,680 +14,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Vision - Videomaker & Social Media Marketer</title>
+    <title>Jake Vision - il social media marketer perfetto per la Tua Attività locale</title>
+    <meta name="description" content="Creo video di qualità cinematografica per attività locali e mi occupo della sponsorizzazione su Instagram e Facebook.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Reset e variabili CSS */
-        :root {
-            --primary-color: #39B54A;
-            --primary-dark: #2a8d3b;
-            --primary-light: #4fd361;
-            --instagram-color: #E4405F;
-            --whatsapp-color: #25D366;
-            --dark-bg: #0a0a0a;
-            --card-bg: rgba(20, 20, 20, 0.95);
-            --text-light: #f5f5f5;
-            --text-gray: #b0b0b0;
-            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-            --border-radius: 16px;
-            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-            --box-shadow-hover: 0 15px 40px rgba(57, 181, 74, 0.25);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-light);
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-        
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-        
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        /* Stili per l'header */
-        header {
-            position: relative;
-            padding: 80px 20px;
-            text-align: center;
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                url('https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-            overflow: hidden;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(57, 181, 74, 0.15) 0%, transparent 25%),
-                radial-gradient(circle at 80% 70%, rgba(57, 181, 74, 0.1) 0%, transparent 25%);
-            z-index: 0;
-        }
-        
-        .header-content {
-            position: relative;
-            z-index: 2;
-            max-width: 900px;
-            width: 100%;
-            padding: 0 20px;
-        }
-        
-        .logo {
-            font-size: 1rem;
-            letter-spacing: 3px;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-        
-        header h1 {
-            font-size: clamp(2.5rem, 8vw, 4.5rem);
-            margin-bottom: 15px;
-            background: linear-gradient(to right, #f5f5f5, var(--primary-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: 1px;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            hyphens: auto;
-        }
-        
-        header p {
-            font-size: clamp(1.2rem, 4vw, 1.4rem);
-            color: var(--primary-color);
-            margin-bottom: 40px;
-            font-weight: 500;
-            letter-spacing: 1px;
-        }
-        
-        .tagline {
-            font-size: clamp(1rem, 3vw, 1.2rem);
-            color: var(--text-gray);
-            max-width: 700px;
-            margin: 0 auto 50px;
-            line-height: 1.8;
-            padding: 0 10px;
-        }
-        
-        .scroll-indicator {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            animation: bounce 2s infinite;
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0) translateX(-50%);}
-            40% {transform: translateY(-15px) translateX(-50%);}
-            60% {transform: translateY(-7px) translateX(-50%);}
-        }
-        
-        /* Sezioni generali */
-        section {
-            padding: 80px 20px;
-            position: relative;
-            width: 100%;
-        }
-        
-        .section-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            width: 100%;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: clamp(2rem, 6vw, 2.8rem);
-            margin-bottom: 20px;
-            color: var(--text-light);
-            position: relative;
-            width: 100%;
-            padding: 0 15px;
-            display: block;
-            box-sizing: border-box;
-            word-wrap: break-word;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150px;
-            height: 3px;
-            background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-        }
-        
-        .section-subtitle {
-            text-align: center;
-            font-size: clamp(1rem, 3vw, 1.2rem);
-            color: var(--text-gray);
-            max-width: 800px;
-            margin: 0 auto 60px;
-            padding: 0 20px;
-            line-height: 1.7;
-        }
-        
-        /* Sezione Introduzione */
-        .intro {
-            background: linear-gradient(to bottom, var(--dark-bg), #0c150d);
-            border-bottom: 1px solid rgba(57, 181, 74, 0.1);
-        }
-        
-        .intro-content {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 50px 30px;
-            background: var(--card-bg);
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            border: 1px solid rgba(57, 181, 74, 0.15);
-            backdrop-filter: blur(10px);
-        }
-        
-        .intro-content h2 {
-            font-size: clamp(1.8rem, 5vw, 2.5rem);
-            margin-bottom: 25px;
-            color: var(--primary-light);
-            padding: 0 10px;
-        }
-        
-        .intro-content p {
-            font-size: clamp(1rem, 3vw, 1.2rem);
-            line-height: 1.8;
-            color: var(--text-gray);
-            padding: 0 10px;
-        }
-        
-        /* Sezione Servizi */
-        .services-section {
-            background: linear-gradient(to bottom, #0c150d, var(--dark-bg));
-        }
-        
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1400px;
-            margin: 0 auto;
-            width: 100%;
-        }
-        
-        .service {
-            background: var(--card-bg);
-            border-radius: var(--border-radius);
-            padding: 35px 25px;
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(57, 181, 74, 0.15);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-        
-        .service::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(to right, var(--primary-color), var(--primary-light));
-        }
-        
-        .service:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--box-shadow-hover);
-            border-color: rgba(57, 181, 74, 0.3);
-        }
-        
-        .service-icon {
-            font-size: clamp(2.5rem, 5vw, 3rem);
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-        
-        .service h3 {
-            font-size: clamp(1.5rem, 4vw, 1.8rem);
-            margin-bottom: 15px;
-            color: var(--text-light);
-            padding: 0 5px;
-        }
-        
-        .service p {
-            color: var(--text-gray);
-            margin-bottom: 25px;
-            flex-grow: 1;
-            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
-            line-height: 1.7;
-            padding: 0 5px;
-        }
-        
-        .service-badge {
-            position: absolute;
-            top: 20px;
-            right: -35px;
-            background: linear-gradient(to right, var(--primary-color), var(--primary-light));
-            color: white;
-            padding: 6px 35px;
-            transform: rotate(45deg);
-            font-size: 0.75rem;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        
-        /* Bottone CTA */
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            background: linear-gradient(to right, var(--primary-color), var(--primary-light));
-            color: white;
-            padding: 16px 28px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: clamp(1rem, 3vw, 1.1rem);
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            max-width: 300px;
-            margin: 20px auto 0;
-            text-align: center;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(57, 181, 74, 0.4);
-            background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
-        }
-        
-        .whatsapp-button {
-            background: linear-gradient(to right, var(--whatsapp-color), #1ebe5d);
-        }
-        
-        .whatsapp-button:hover {
-            background: linear-gradient(to right, #1ebe5d, var(--whatsapp-color));
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-        }
-        
-        /* Sezione Strategia */
-        .strategy-section {
-            background: linear-gradient(to bottom, var(--dark-bg), #0a1a0c);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .strategy-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 10% 20%, rgba(57, 181, 74, 0.08) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(57, 181, 74, 0.08) 0%, transparent 40%);
-            z-index: 0;
-        }
-        
-        .strategy-content {
-            position: relative;
-            z-index: 2;
-            max-width: 1000px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            border-radius: var(--border-radius);
-            padding: 50px 30px;
-            box-shadow: var(--box-shadow);
-            border: 1px solid rgba(57, 181, 74, 0.15);
-            width: 100%;
-        }
-        
-        .strategy-content h2 {
-            text-align: center;
-            font-size: clamp(1.8rem, 5vw, 2.5rem);
-            margin-bottom: 30px;
-            color: var(--primary-light);
-            padding: 0 15px;
-        }
-        
-        .strategy-content p {
-            font-size: clamp(1rem, 3vw, 1.1rem);
-            line-height: 1.8;
-            color: var(--text-gray);
-            margin-bottom: 25px;
-            padding: 0 10px;
-        }
-        
-        .strategy-points {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-        
-        .strategy-point {
-            text-align: center;
-            padding: 25px 20px;
-            background: rgba(10, 20, 12, 0.7);
-            border-radius: var(--border-radius);
-            border-top: 4px solid var(--primary-color);
-            transition: var(--transition);
-        }
-        
-        .strategy-point:hover {
-            transform: translateY(-5px);
-            border-top-color: var(--primary-light);
-        }
-        
-        .strategy-point i {
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-        
-        .strategy-point h4 {
-            font-size: clamp(1.2rem, 3vw, 1.4rem);
-            margin-bottom: 12px;
-            color: var(--text-light);
-        }
-        
-        .strategy-point p {
-            font-size: clamp(0.9rem, 2.5vw, 1rem);
-            margin-bottom: 0;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #050a05;
-            padding: 60px 20px 30px;
-            text-align: center;
-            border-top: 1px solid rgba(57, 181, 74, 0.1);
-            width: 100%;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            width: 100%;
-        }
-        
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-            width: 100%;
-        }
-        
-        .contact-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            padding: 25px 20px;
-            background: rgba(20, 30, 22, 0.6);
-            border-radius: var(--border-radius);
-            transition: var(--transition);
-            width: 100%;
-        }
-        
-        .contact-item:hover {
-            transform: translateY(-5px);
-            background: rgba(20, 30, 22, 0.8);
-        }
-        
-        .contact-icon {
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            margin-bottom: 10px;
-        }
-        
-        .contact-item.whatsapp .contact-icon {
-            color: var(--whatsapp-color);
-        }
-        
-        .contact-item.instagram .contact-icon {
-            color: var(--instagram-color);
-        }
-        
-        .contact-item.email .contact-icon {
-            color: var(--primary-color);
-        }
-        
-        .contact-item h4 {
-            font-size: clamp(1.2rem, 3vw, 1.4rem);
-            margin-bottom: 5px;
-        }
-        
-        .contact-item p {
-            font-size: clamp(0.9rem, 2.5vw, 1rem);
-            color: var(--text-gray);
-            line-height: 1.6;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-        
-        .social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 55px;
-            height: 55px;
-            background: rgba(57, 181, 74, 0.1);
-            border-radius: 50%;
-            font-size: 1.4rem;
-            transition: var(--transition);
-        }
-        
-        .social-link.instagram {
-            background: rgba(228, 64, 95, 0.1);
-        }
-        
-        .social-link.whatsapp {
-            background: rgba(37, 211, 102, 0.1);
-        }
-        
-        .social-link:hover {
-            transform: translateY(-8px) scale(1.1);
-        }
-        
-        .social-link.instagram:hover {
-            background: var(--instagram-color);
-        }
-        
-        .social-link.whatsapp:hover {
-            background: var(--whatsapp-color);
-        }
-        
-        .copyright {
-            color: var(--text-gray);
-            font-size: clamp(0.8rem, 2vw, 0.9rem);
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            line-height: 1.6;
-        }
-        
-        .instagram-handle {
-            color: var(--instagram-color);
-            font-weight: 600;
-            font-size: clamp(1rem, 3vw, 1.1rem);
-        }
-        
-        /* Animazioni */
-        .animate-up {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-        
-        .animate-up.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .fade-in {
-            animation: fadeIn 1.2s ease-out forwards;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        /* Media Queries specifiche per mobile */
-        @media screen and (max-width: 768px) {
-            header {
-                padding: 60px 15px;
-            }
-            
-            .header-content {
-                padding: 0 10px;
-            }
-            
-            section {
-                padding: 60px 15px;
-            }
-            
-            .intro-content, .strategy-content {
-                padding: 40px 20px;
-            }
-            
-            .services {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-            
-            .service {
-                padding: 30px 20px;
-            }
-            
-            .service-badge {
-                right: -40px;
-                padding: 6px 40px;
-                font-size: 0.7rem;
-            }
-            
-            .strategy-points {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .contact-info {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .cta-button {
-                padding: 14px 24px;
-            }
-        }
-        
-        @media screen and (max-width: 480px) {
-            header h1 {
-                font-size: 2.2rem;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
-            
-            .section-title::after {
-                width: 100px;
-            }
-            
-            .intro-content h2, .strategy-content h2 {
-                font-size: 1.6rem;
-            }
-            
-            .service h3 {
-                font-size: 1.4rem;
-            }
-            
-            .contact-item {
-                padding: 20px 15px;
-            }
-            
-            .social-link {
-                width: 50px;
-                height: 50px;
-                font-size: 1.3rem;
-            }
-        }
-        
-        /* Per schermi molto piccoli */
-        @media screen and (max-width: 360px) {
-            header h1 {
-                font-size: 1.9rem;
-            }
-            
-            header p {
-                font-size: 1.1rem;
-            }
-            
-            .section-title {
-                font-size: 1.6rem;
-            }
-            
-            .service {
-                padding: 25px 15px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Effetto LED -->
+    <div class="led-border led-top"></div>
+    <div class="led-border led-right"></div>
+    <div class="led-border led-bottom"></div>
+    <div class="led-border led-left"></div>
+
     <!-- Header -->
     <header class="fade-in">
         <div class="header-content">
-            <div class="logo">Jake Vision</div>
-            <h1 class="animate-up">Video che Vendono</h1>
-            <p class="animate-up">Videomaker & Social Media Marketer</p>
-            <p class="tagline animate-up">Trasformo la tua presenza digitale con contenuti visivi di impatto e strategie di marketing mirate per far crescere la tua attività locale</p>
+            <div class="logo">JAKE VISION</div>
+            <h1 class="animate-up">VIDEO  VERTICALI CINEMATOGRAFICI<br>PER LA TUA ATTIVITÀ</h1>
+            <p class="tagline animate-up">Porto il cinema nel tuo locale, occupandomi della sponsorizzazione sui social media aumentando le vendite</p>
             <a href="#servizi" class="cta-button animate-up">
                 <i class="fas fa-play-circle"></i> Scopri i miei servizi
             </a>
@@ -697,12 +42,44 @@
         </div>
     </header>
 
-    <!-- Sezione Introduzione -->
-    <section class="intro">
+    <!-- Sezione Il Mio Processo -->
+    <section class="process-section">
         <div class="section-container">
-            <div class="intro-content animate-up">
-                <h2>La Tua Attività, La Mia Visione</h2>
-                <p>Specializzato in strategie di marketing per attività locali. Creo contenuti visivi di alta qualità e gestisco la tua presenza sui social per aumentare le vendite, farti conoscere nel tuo territorio e trasformare gli spettatori in clienti fedeli. Con un approccio personalizzato, studio ogni dettaglio del tuo brand per raccontare la sua storia in modo autentico e coinvolgente.</p>
+            <h2 class="section-title animate-up">Come Lavoro</h2>
+            <p class="section-subtitle animate-up">Un processo semplice e completo per la tua attività</p>
+            
+            <div class="process-steps">
+                <div class="process-step animate-up">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Vengo nella Tua Attività</h3>
+                        <p>Porto l'attrezzatura professionale direttamente nel tuo locale per registrare tutti i video necessari</p>
+                    </div>
+                </div>
+                
+                <div class="process-step animate-up">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Post produzione</h3>
+                        <p>Monto i video con qualità cinematografica, curando ogni dettaglio senza compromessi</p>
+                    </div>
+                </div>
+                
+                <div class="process-step animate-up">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Gestisco la Sponsorizzazione</h3>
+                        <p>Mi occupo delle campagne pubblicitarie su Instagram e Facebook per tutto il mese, mantenedo sotto controllo le analytics</p>
+                    </div>
+                </div>
+                
+                <div class="process-step animate-up">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Monitoraggio Continuo</h3>
+                        <p>Controllo e ottimizzo costantemente le campagne per massimizzare i risultati</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -710,87 +87,166 @@
     <!-- Sezione Servizi -->
     <section class="services-section" id="servizi">
         <div class="section-container">
-            <h2 class="section-title animate-up">Servizi</h2>
-            <p class="section-subtitle animate-up">Soluzioni personalizzate per ogni esigenza, dalla visibilità base alla strategia premium</p>
+            <h2 class="section-title animate-up">I Miei Servizi</h2>
+            <p class="section-subtitle animate-up">Soluzioni complete per la tua presenza digitale</p>
             
-            <div class="services">
+            <div class="services-grid">
                 <!-- Servizio 1 -->
-                <div class="service animate-up">
-                    <div class="service-badge">Il Più Venduto</div>
+                <div class="service-card animate-up">
+                    <div class="service-badge">PIÙ VENDUTO</div>
                     <div class="service-icon">
                         <i class="fas fa-film"></i>
                     </div>
-                    <h3>Pacchetto Reels Base</h3>
-                    <p>6 Reels professionali al mese studiati per aumentare la visibilità del tuo locale. Ogni video è ottimizzato per farti trovare, scegliere e far ricordare il tuo brand. Perfetto per ristoranti, bar, agenzie immobiliari e qualsiasi attività locale che vuole emergere sui social.</p>
+                    <h3>6 Reels per farti conoscere in città</h3>
+                    <p>Pacchetto di 6 Reels professionali al mese, montati con qualità cinematografica e ottimizzati per i social</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Video di alta qualità</li>
+                        <li><i class="fas fa-check"></i> Montaggio cinematografico</li>
+                        <li><i class="fas fa-check"></i> Ottimizzazione per social</li>
+                    </ul>
                     <a href="https://wa.me/3517554147" class="cta-button whatsapp-button">
-                        <i class="fab fa-whatsapp"></i> Richiedi su WhatsApp
+                        <i class="fab fa-whatsapp"></i> Richiedi informazioni
                     </a>
                 </div>
                 
                 <!-- Servizio 2 -->
-                <div class="service animate-up">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>Servizio Personalizzato</h3>
-                    <p>Ogni attività ha una sua identità unica. Offro un servizio su misura per raccontare la storia del tuo brand con contenuti mirati e strategie creative adattate alla tua nicchia di mercato e al tuo pubblico di riferimento.</p>
-                    <a href="https://wa.me/3517554147" class="cta-button whatsapp-button">
-                        <i class="fab fa-whatsapp"></i> Richiedi su WhatsApp
-                    </a>
-                </div>
-                
-                <!-- Servizio 3 -->
-                <div class="service animate-up">
+                <div class="service-card animate-up">
                     <div class="service-icon">
                         <i class="fas fa-video"></i>
                     </div>
                     <h3>Video Singolo Professionale</h3>
-                    <p>Un video di alta qualità che valorizza il tuo locale o servizio. Perfetto per pubblicità mirate, eventi speciali o presentazioni, con una regia che cattura l'attenzione dei potenziali clienti e li invoglia a sceglierti.</p>
+                    <p>Un video di alta qualità per presentare il tuo locale, un evento speciale o una promozione</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Video spot professionale</li>
+                        <li><i class="fas fa-check"></i> Qualità cinematografica</li>
+                        <li><i class="fas fa-check"></i> Adatto a ogni esigenza</li>
+                    </ul>
                     <a href="https://wa.me/3517554147" class="cta-button whatsapp-button">
-                        <i class="fab fa-whatsapp"></i> Richiedi su WhatsApp
+                        <i class="fab fa-whatsapp"></i> Richiedi informazioni
+                    </a>
+                </div>
+                
+                <!-- Servizio 3 -->
+                <div class="service-card animate-up">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Servizio Premium</h3>
+                    <p>Soluzione completa per dominare al 100% la concorrenza anche in grandi città, gestione avanzata e concentrata delle sponsorizzazioni</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Video premium quality</li>
+                        <li><i class="fas fa-check"></i> Gestione ads avanzata</li>
+                        <li><i class="fas fa-check"></i> Supporto prioritario</li>
+                    </ul>
+                    <a href="https://wa.me/3517554147" class="cta-button whatsapp-button">
+                        <i class="fab fa-whatsapp"></i> Richiedi informazioni
                     </a>
                 </div>
                 
                 <!-- Servizio 4 -->
-                <div class="service animate-up">
+                <div class="service-card animate-up">
                     <div class="service-icon">
-                        <i class="fas fa-crown"></i>
+                        <i class="fas fa-palette"></i>
                     </div>
-                    <h3>Pacchetto Premium</h3>
-                    <p>La soluzione completa per dominare la concorrenza. Video di altissima qualità, storytelling personalizzato, gestione strategica dei social media e analisi dei risultati. Trasforma il tuo locale nella scelta ovvia nella tua città.</p>
+                    <h3>Servizio Personalizzato</h3>
+                    <p>Soluzione su misura per esigenze specifiche, studiate insieme in base alle tue necessità</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Piano personalizzato</li>
+                        <li><i class="fas fa-check"></i> Flessibilità totale</li>
+                        <li><i class="fas fa-check"></i> Adatto a ogni esigenza</li>
+                    </ul>
                     <a href="https://wa.me/3517554147" class="cta-button whatsapp-button">
-                        <i class="fab fa-whatsapp"></i> Richiedi su WhatsApp
+                        <i class="fab fa-whatsapp"></i> Richiedi informazioni
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sezione Strategia -->
-    <section class="strategy-section">
+    <!-- Sezione Sponsorizzazione -->
+    <section class="ads-section">
         <div class="section-container">
-            <div class="strategy-content animate-up">
-                <h2>La Mia Strategia Vincente</h2>
-                <p>La mia strategia è pensata per ogni attività locale, indipendentemente dal settore. Realizzo video verticali di alta qualità, progettati per essere sponsorizzati e diffusi sui social. Ogni video è pensato per farti emergere nella tua zona, attrarre nuovi clienti e aumentare le vendite.</p>
-                <p>Utilizzo la potenza dei social media per far crescere la tua attività nel territorio dove operi, portandoti più visibilità e clienti reali, senza bisogno di budget esorbitanti per la pubblicità tradizionale.</p>
-                <p>La mia strategia non è solo creare contenuti, ma anche farli funzionare, utilizzando gli strumenti di sponsorizzazione giusti per massimizzare l'impatto locale e migliorare i tuoi risultati.</p>
+            <div class="ads-content animate-up">
+                <h2>Mi Occupo della Sponsorizzazione</h2>
+                <p>Oltre a creare video di qualità, gestisco per te le campagne pubblicitarie su Instagram e Facebook. Mi occupo di tutto il processo, dalla creazione degli annunci al monitoraggio dei risultati.</p>
                 
-                <div class="strategy-points">
-                    <div class="strategy-point">
-                        <i class="fas fa-bullseye"></i>
-                        <h4>Target Locale Preciso</h4>
-                        <p>Mi concentro sul tuo territorio per raggiungere i clienti giusti</p>
+                <div class="platforms">
+                    <div class="platform">
+                        <div class="platform-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="platform-info">
+                            <h4>Instagram Ads</h4>
+                            <p>Sponsorizzazione dei Reels e post per raggiungere nuovi clienti</p>
+                        </div>
                     </div>
-                    <div class="strategy-point">
+                    
+                    <div class="platform">
+                        <div class="platform-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="platform-info">
+                            <h4>Facebook Ads</h4>
+                            <p>Campagne pubblicitarie mirate per fidelizzare i clienti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Perché Scegliere Me -->
+    <section class="why-section">
+        <div class="section-container">
+            <h2 class="section-title animate-up">Perché Scegliere Me</h2>
+            
+            <div class="why-grid">
+                <div class="why-card animate-up">
+                    <div class="why-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Qualità Cinematografica</h3>
+                    <p>Porto attrezzatura professionale e creo video con la qualità di un piccolo film</p>
+                </div>
+                
+                <div class="why-card animate-up">
+                    <div class="why-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Tutto in Una Persona</h3>
+                    <p>Sono videomaker, montatore e ads manager. Risparmi rispetto a un'agenzia</p>
+                </div>
+                
+                <div class="why-card animate-up">
+                    <div class="why-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Vengo da Te</h3>
+                    <p>Mi sposto nella tua attività per registrare tutto il materiale necessario</p>
+                </div>
+                
+                <div class="why-card animate-up">
+                    <div class="why-icon">
                         <i class="fas fa-chart-line"></i>
-                        <h4>Analisi dei Risultati</h4>
-                        <p>Monitoraggio costante delle performance per ottimizzare la strategia</p>
                     </div>
-                    <div class="strategy-point">
-                        <i class="fas fa-rocket"></i>
-                        <h4>Contenuti Ad Alto Impatto</h4>
-                        <p>Video progettati per catturare l'attenzione in pochi secondi</p>
-                    </div>
+                    <h3>Gestione Completa</h3>
+                    <p>Dalla registrazione alla sponsorizzazione, mi occupo di tutto il processo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione CTA -->
+    <section class="cta-section">
+        <div class="section-container">
+            <div class="cta-content animate-up">
+                <h2>Pronto a Portare il Cinema e più vendite nella Tua Attività?</h2>
+                <p>Contattami per una consulenza gratuita e scopri come posso aiutarti con video cinematografici e sponsorizzazione efficace</p>
+                
+                <div class="cta-buttons">
+                    <a href="https://wa.me/3517554147" class="cta-button whatsapp-button large">
+                        <i class="fab fa-whatsapp"></i> Scrivimi su WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
@@ -799,125 +255,49 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <h2 class="section-title animate-up">Contattami</h2>
+            <h3 class="footer-title">Contattami</h3>
             
-            <div class="contact-info animate-up">
-                <div class="contact-item whatsapp">
-                    <div class="contact-icon">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon whatsapp">
                         <i class="fab fa-whatsapp"></i>
                     </div>
-                    <div>
+                    <div class="contact-details">
                         <h4>WhatsApp</h4>
                         <p>+39 351 755 4147</p>
-                        <p>Risposta rapida entro poche ore</p>
                     </div>
                 </div>
                 
-                <div class="contact-item instagram">
-                    <div class="contact-icon">
+                <div class="contact-item">
+                    <div class="contact-icon instagram">
                         <i class="fab fa-instagram"></i>
                     </div>
-                    <div>
+                    <div class="contact-details">
                         <h4>Instagram</h4>
-                        <p class="instagram-handle">@jake.vision</p>
-                        <p>Guarda i miei lavori</p>
+                        <p>@jake.vision</p>
                     </div>
                 </div>
                 
-                <div class="contact-item email">
-                    <div class="contact-icon">
+                <div class="contact-item">
+                    <div class="contact-icon email">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <div>
+                    <div class="contact-details">
                         <h4>Email</h4>
                         <p>info@jakevision.com</p>
-                        <p>Per proposte di collaborazione</p>
                     </div>
                 </div>
             </div>
             
-            <div class="social-links animate-up">
-                <a href="https://instagram.com/jake.vision" target="_blank" class="social-link instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://wa.me/3517554147" target="_blank" class="social-link whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-            
-            <a href="https://wa.me/3517554147" target="_blank" class="cta-button whatsapp-button animate-up">
-                <i class="fab fa-whatsapp"></i> Inizia Ora la Tua Trasformazione
-            </a>
-            
-            <p class="copyright animate-up">© 2023 Jake Vision - Videomaker & Social Media Marketer. Tutti i diritti riservati.</p>
+            <p class="copyright">© 2024 Jake Vision - Tutti i diritti riservati</p>
         </div>
     </footer>
 
-    <script>
-        // Animazione al caricamento della pagina
-        document.addEventListener('DOMContentLoaded', function() {
-            // Rende visibili gli elementi con classe animate-up
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-            
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, observerOptions);
-            
-            // Osserva tutti gli elementi con classe animate-up
-            document.querySelectorAll('.animate-up').forEach(el => {
-                observer.observe(el);
-            });
-            
-            // Scroll smooth per i link interni
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if(targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Animazione al passaggio del mouse sui servizi
-            const services = document.querySelectorAll('.service');
-            services.forEach(service => {
-                service.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-10px)';
-                });
-                
-                service.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
-            });
-            
-            // Effetto parallax sull'header
-            window.addEventListener('scroll', function() {
-                const scrollPosition = window.scrollY;
-                const header = document.querySelector('header');
-                
-                if(header && scrollPosition < window.innerHeight) {
-                    header.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-    
+    <script  src="./script.js"></script>
+
   </body>
   
 </html>
